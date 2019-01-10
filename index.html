@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="lt-ie9 lt-ie8 lt-ie7" dir="ltr" lang="hr"><![endif]-->
+<!--[if IE 7]><html class="lt-ie9 lt-ie8" dir="ltr" lang="hr"><![endif]-->
+<!--[if IE 8]><html class="lt-ie9" dir="ltr" lang="hr"<![endif]-->
+<!--[if gt IE 8]><!--><html dir="ltr" lang="hr"><!--<![endif]-->
+<head id="vrh">
+
+    <!-- Kodiranje i naslov -->
+    <meta charset="utf-8">
+    <title>Žaklina Cestar - Web stranica</title>
+
+    <!-- Mobilno -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=2.0, width=device-width, user-scalable=yes, minimal-ui">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico" sizes="16x16" title="Favicon" type="image/vnd.microsoft.icon">
+
+    <!-- SEO -->
+    <meta name="description" content="Moja prva osobna Web stranica i portfolio.">
+    <meta name="keywords" content="Žaklina Cestar, multimedija, web stranica, portfolio, reference">
+
+    <!-- Brzina stranice - HTTP/2 -->
+    <link rel="preconnect dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="preconnect dns-prefetch" href="https://cdnjs.cloudflare.com">
+
+    <link rel="preload" href="css/stilovi.css" as="style">
+    <link rel="preload" href="css/bootstrap.min.css" as="style">
+    <link rel="preload" href="css/font-awesome.min.css" as="style">
+    <link rel="preload" href="css/lightbox.css" as="style">
+
+    <link rel="preload" href="js/jquery.min.js" as="script">
+    <link rel="preload" href="js/bootstrap.min.js" as="script">
+
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" as="font" crossorigin="anonymous">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/lightbox.css" type="text/css">
+    <link rel="stylesheet" href="css/stilovi.css" type="text/css">
+
+    <!-- Fontovi -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+
+    <!-- Kolačići EU -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
+    <script type="text/javascript">
+    window.addEventListener("load", function(){
+    window.cookieconsent.initialise({
+      "palette": {
+        "popup": {
+          "background": "#efefef",
+          "text": "#404040"
+        },
+        "button": {
+          "background": "#8ec760",
+          "text": "#ffffff"
+        }
+      },
+      "theme": "classic",
+      "content": {
+        "message": "Kako bi posjet ovoj internetskoj stranici bio što ugodniji, funkcionalniji i praktičniji, ova internet stranica sprema na vaše računalo određenu količinu informacija, takozvanih cookies (kolačići). ",
+        "dismiss": "Prihvaćam",
+        "link": "Saznaj više o kolačićima!"
+      }
+    })});
+    </script>
+
+</head>
+
+<body id="page-top">
+
+    <!--[if lt IE 8]>
+      <p class="browserupgrade fritex">Hej, zamjetili smo da Web stranicu pregledavate sa <strong>zastarijelom inačicom</strong> Web preglednika. Kako biste iskoristili poboljšanja, molimo Vas da <a href="https://browsehappy.com/">ažurirate svoj Web preglednik</a> što prije. Hvala :)</p>
+    <![endif]-->
+
+    <!-- Učitavanje -->
+    <div id="loader-wrapper">
+      <div id="loader"></div>
+    </div>
+
+    <!-- Navigacija -->
+    <header aria-label="Zaglavlje portala" role="banner">
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav" role="navigation" aria-label="Glavni izbornik">
+        <div class="container">
+          <a class="navbar-brand js-scroll-trigger zaklina" href="#page-top" title="Žaklina Cestar">Žaklina Cestar</a>
+          <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Glavni izbornik">
+            Izbornik
+            <em class="fa fa-bars" aira-hidden="true" title="Glavni izbornik"></em>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html" title="Početna stranica">Početna</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#sto-radim" title="Čime se bavim">Čime se bavim</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#reference" title="Moji radovi">Moji radovi</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#o-meni" title="O meni">O meni</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#kontakt" title="Kontaktirajte me">Kontakt</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Video -->
+    <section class="masthead text-center text-bijelo d-flex" id="izdvojeno">
+      <div class="overlay"></div>
+      <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+        <source src="video/dizajn.webm" type='video/webm; codecs="vp8, vorbis"'>
+        <source src="video/dizajn.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+      </video>
+      <div class="container my-auto topa">
+        <div class="row">
+          <div class="col-lg-10 mx-auto">
+            <h1 class="text-uppercase naslov-sijena">
+              <strong>Trebaš kvalitetan grafički dizajn? Javi se!</strong>
+            </h1>
+            <hr>
+          </div>
+          <div class="col-lg-8 mx-auto">
+            <p class="text-faded mb-5 tekst-sijena">Dizajniram brošure, vizitke, kataloge, plakate, letke, memorandume...<br>Ne brinite, tu sam da Vam pomognem :)</p>
+            <a class="btn btn-primary btn-xl js-scroll-trigger" href="#sto-radim">Saznaj više <em class="fa fa-external-link" aria-hidden="true" title="Čime se bavim"></em></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Glavno -->
+    <section id="sto-radim" class="py-sekcija sto-radim">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading">Vizualna rješenja</h2>
+            <hr class="my-4">
+            <p class="mb-4">Vaše novo digitalno iskustvo</p>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 mb-4 text-center">
+            <span class="fa-stack fa-4x">
+              <em class="fa fa-circle fa-stack-2x text-primary sr-icons" aria-hidden="true"></em>
+              <em class="fa fa-pencil fa-stack-1x fa-inverse mb-3 sr-icons" aria-hidden="true" title=""></em>
+            </span>
+              <h3 class="mb-3">Grafika</h3>
+              <p class="text-muted mb-0">Prezentacija pred ciljanom publikom</p>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4 text-center">
+            <span class="fa-stack fa-4x">
+              <em class="fa fa-circle fa-stack-2x text-primary sr-icons" aria-hidden="true"></em>
+              <em class="fa fa-film fa-stack-1x fa-inverse mb-3 sr-icons" aria-hidden="true" title=""></em>
+            </span>
+              <h3 class="mb-3">Video</h3>
+              <p class="text-muted mb-0">Snimanje i montiranje video zapisa</p>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4 text-center prog">
+              <span class="fa-stack fa-4x">
+                <em class="fa fa-circle fa-stack-2x text-primary sr-icons" aria-hidden="true"></em>
+                <em class="fa fa-camera fa-stack-1x fa-inverse mb-3 sr-icons" aria-hidden="true" title=""></em>
+              </span>
+              <h3 class="mb-3">Fotografija</h3>
+              <p class="text-muted mb-0">Fotografiranje i obrada fotografija</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Separator -->
+    <div class="container-fluid padnul bgc">
+      <div class="triangle-down">
+        <div></div>
+      </div>
+    </div>
+
+    <!-- Što radim -->
+    <section class="showcase py-0">
+      <div class="container-fluid p-0">
+        <div class="row no-gutters">
+          <div class="col-lg-6 order-lg-2 text-bijelo showcase-img obrub-lijevi" style="background-image: url('images/bg-dizajn.jpg');"></div>
+          <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+            <h2>Grafički dizajn</h2>
+            <p class="lead">Vizuali identitet, jelovnika, cjenika, kataloga, brošur, promotivni materijali, dizajn i prijelom knjige, vizitke, ulaznice, pozivnice, ambalaža proizvoda ...</p>
+            <p class="text-center text-lg-left">
+              <a class="btn btn-primary btn-xl js-scroll-trigger" href="#reference">Pogledaj radove <em class="fa fa-external-link" aria-hidden="true"></em></a>
+            </p>
+          </div>
+        </div>
+        <div class="row no-gutters">
+          <div class="col-lg-6 text-bijelo showcase-img obrub-desni" style="background-image: url('images/bg-foto.jpg');"></div>
+          <div class="col-lg-6 my-auto showcase-text">
+            <h2>Fotografiranje</h2>
+            <p class="lead">Fotografiranje događaja, digitalna obrada fotografije, retuširanje, skeniranje fotografija, snimanje foto modela ... </p>
+            <p class="text-center text-lg-left">
+              <a class="btn btn-primary btn-xl js-scroll-trigger" href="#reference">Pogledaj radove <em class="fa fa-external-link" aria-hidden="true"></em></a>
+            </p>
+          </div>
+        </div>
+        <div class="row no-gutters">
+          <div class="col-lg-6 order-lg-2 text-bijelo showcase-img obrub-lijevi" style="background-image: url('images/bg-video.jpg');"></div>
+          <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+            <h2>Video produkcija</h2>
+            <p class="lead">Vjenčanja, spotovi, sportski događaji, prijenos uživo, snimanje na terenu, uređivanje, montiranje, promotivni video i TV zapisi ...</p>
+            <p class="text-center text-lg-left">
+              <a class="btn btn-primary btn-xl js-scroll-trigger" href="#reference">Pogledaj radove <em class="fa fa-external-link" aria-hidden="true"></em></a>
+            </p>
+          </div>
+        </div>
+        <div class="row no-gutters">
+          <div class="col-lg-6 text-bijelo showcase-img obrub-desni" style="background-image: url('images/bg-3d.jpg');"></div>
+          <div class="col-lg-6 my-auto showcase-text">
+            <h2>Izrada 3D prototipa</h2>
+            <p class="lead">3D modeliranje prema nacrtu, izrada tehničke dokumentacije, 3D vizualizacija prostora, interijeri, okoliš, strojevi ...</p>
+            <p class="text-center text-lg-left">
+              <a class="btn btn-primary btn-xl js-scroll-trigger" href="#reference">Pogledaj radove <em class="fa fa-external-link" aria-hidden="true"></em></a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Separator -->
+    <div class="container-fluid padnul bgd">
+    </div>
+
+    <!-- Reference -->
+    <section class="py-sekcija" id="reference">
+      <div class="container">
+        <div class="row">
+          <div id="snovi" class="col-lg-12 text-center">
+            <h2 class="section-heading">Izdvojeni radovi</h2>
+            <hr class="my-4">
+            <p  class="mb-4">Ispunjeni snovi i pozitivni dojmovi</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Radovi -->
+    <section class="padnula reference" id="portfolio">
+      <div class="container-fluid padnula">
+        <div class="row no-gutters popup-gallery">
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" data-lightbox="galerija" data-title="Naziv rada #1" href="images/portfolio/fullsize/01.jpg">
+              <img class="img-fluid" src="images/portfolio/thumbnails/01.jpg" alt="Rad">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                    Fotografija
+                  </div>
+                  <div class="project-name">
+                    Naziv rada #1
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" data-lightbox="galerija" data-title="Naziv rada #2" href="images/portfolio/fullsize/02.jpg">
+              <img class="img-fluid" src="images/portfolio/thumbnails/02.jpg" alt="Rad">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                    Fotografija
+                  </div>
+                  <div class="project-name">
+                    Naziv rada #2
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" data-lightbox="galerija" data-title="Naziv rada #3" href="images/portfolio/fullsize/03.jpg">
+              <img class="img-fluid" src="images/portfolio/thumbnails/03.jpg" alt="Rad">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                    Fotografija
+                  </div>
+                  <div class="project-name">
+                    Naziv rada #3
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" data-lightbox="galerija" data-title="Naziv rada #4" href="images/portfolio/fullsize/04.jpg">
+              <img class="img-fluid" src="images/portfolio/thumbnails/04.jpg" alt="Rad">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                    Fotografija
+                  </div>
+                  <div class="project-name">
+                    Naziv rada #4
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" data-lightbox="galerija" data-title="Naziv rada #5" href="images/portfolio/fullsize/05.jpg">
+              <img class="img-fluid" src="images/portfolio/thumbnails/05.jpg" alt="Rad">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                    Fotografija
+                  </div>
+                  <div class="project-name">
+                    Naziv rada #5
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" data-lightbox="galerija" data-title="Naziv rada #6" href="images/portfolio/fullsize/06.jpg">
+              <img class="img-fluid" src="images/portfolio/thumbnails/06.jpg" alt="Rad">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                    Fotografija
+                  </div>
+                  <div class="project-name">
+                    Naziv rada #6
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" data-lightbox="galerija" data-title="Naziv rada #7" href="images/portfolio/fullsize/07.jpg">
+              <img class="img-fluid" src="images/portfolio/thumbnails/07.jpg" alt="Rad">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                    Fotografija
+                  </div>
+                  <div class="project-name">
+                    Naziv rada #7
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" data-lightbox="galerija" data-title="Naziv rada #8" href="images/portfolio/fullsize/08.jpg">
+              <img class="img-fluid" src="images/portfolio/thumbnails/08.jpg" alt="Rad">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                    Fotografija
+                  </div>
+                  <div class="project-name">
+                    Naziv rada #8
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" data-lightbox="galerija" data-title="Naziv rada #9" href="images/portfolio/fullsize/09.jpg">
+              <img class="img-fluid" src="images/portfolio/thumbnails/09.jpg" alt="Rad">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                    Fotografija
+                  </div>
+                  <div class="project-name">
+                    Naziv rada #9
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" data-lightbox="galerija" data-title="Naziv rada #10" href="images/portfolio/fullsize/010.jpg">
+              <img class="img-fluid" src="images/portfolio/thumbnails/010.jpg" alt="Rad">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                    Fotografija
+                  </div>
+                  <div class="project-name">
+                    Naziv rada #10
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" data-lightbox="galerija" data-title="Naziv rada #11" href="images/portfolio/fullsize/011.jpg">
+              <img class="img-fluid" src="images/portfolio/thumbnails/011.jpg" alt="Rad">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                    Fotografija
+                  </div>
+                  <div class="project-name">
+                    Naziv rada #11
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" data-lightbox="galerija" data-title="Naziv rada #12" href="images/portfolio/fullsize/012.jpg">
+              <img class="img-fluid" src="images/portfolio/thumbnails/012.jpg" alt="Rad">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                    Fotografija
+                  </div>
+                  <div class="project-name">
+                    Naziv rada #12
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- O meni -->
+    <section class="poza py-sekcija o-meni" id="o-meni">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading">Upoznajmo se</h2>
+            <hr class="my-4">
+            <p class="mb-5">Kreativna dizajnerica</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="team-member">
+              <a href="images/zaklina.jpg" data-lightbox="ja" data-title="Žaklina Cestar" href="images/zaklina.jpg">
+                <img class="mx-auto rounded-circle" src="images/zaklina.jpg" alt="Žaklina Cestar">
+              </a>
+              <h4>Žaklina Cestar</h4>
+              <p class="text-muted">Kreativna dizajnerica</p>
+              <ul class="list-inline social-buttons">
+                <li class="list-inline-item">
+                  <a href="https://www.facebook.com/profile.php?id=100004462424030" class="fb" title="Dodaj me na Facebook!" target="_blank">
+                    <em class="fa fa-facebook" aria-hidden="true"></em>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="mailto:zacestar@unin.hr?subject=Upit" class="posta" title="Pošalji mi poruku" target="_blank">
+                    <em class="fa fa-envelope" aria-hidden="true"></em>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-8 mx-auto text-center omeni">
+            <p class="large">Dolazim iz malog baroknog mjesta sa sjevera Hrvatske, Grada <strong>Varaždina</strong>. <br>U slobodno vrijeme bavim se <strong>fotografijom</strong> i <strong>obradom</strong> fotografije u <strong>digitalnom</strong> obliku.<br><br>Trenutno sam <strong>3. godina</strong> preddiplomskog stručng studija <strong>Multimedije, oblikovanja i primjene</strong> na <strong>Sveučilištu Sjever</strong> u <strong>Varaždinu</strong>.<br><br>Baviti <strong>dizajnom</strong> i <strong>grafikom</strong> odlučila sam još kao klinka.<br>Već nekoliko godina <strong>crtam</strong> i <strong>snimam</strong> fotografije za neki događaj ili reklamu.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Alati -->
+    <section class="py-5 ikone-alati">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-sm-6 col-6 my-1">
+            <img class="img-fluid d-block mx-auto" src="images/ikone/photoshop-cc.svg" alt="Adobe Photoshop" width="96" height="96">
+          </div>
+          <div class="col-md-3 col-sm-6 col-6 my-1">
+            <img class="img-fluid d-block mx-auto" src="images/ikone/adobe-illustrator-cc.svg" alt="Adobe Illustrator" width="96" height="96">
+          </div>
+          <div class="col-md-3 col-sm-6 col-6 my-1">
+            <img class="img-fluid d-block mx-auto" src="images/ikone/indesign-cc.svg" alt="Adobe InDesign" width="96" height="96">
+          </div>
+          <div class="col-md-3 col-sm-6 col-6 my-1">
+            <img class="img-fluid d-block mx-auto" src="images/ikone/premiere-cc.svg" alt="Adobe Premiere" width="96" height="96">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Citat -->
+    <section class="call-to-action text-white text-center">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-9 mx-auto">
+            <h2 class="sijena-cta ukoseno">Radim jedinstveni grafički dizajn koji privlači pažnju i ne pušta. Nešto kao "pit bull", ali u dizajnu.</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Poziv na radnju -->
+    <section class="bg-primary py-sekcija py-5 vasa-ideja" id="pna">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center">
+        <h2 class="section-heading text-bijelo">VAŠA IDEJA <br>Za dobar početak!</h2>
+            <hr class="light my-4">
+            <p class="text-fadeda mb-4">Paket koji se sastoji od izrade logotipa, posjetnice, natpisne ploče i svih ostalih popratnih grafičkih elemenata za koje niste ni znali da su nužni prilikom pokretanja poduzeća ili projekta. <strong><u>Dogovorimo detalje!</u></strong></p>
+            <a class="btn btn-light btn-xl js-scroll-trigger" href="#kontakt">Zatraži ponudu <em class="fa fa-phone" aria-hidden="true"></em></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Kontakt -->
+    <section id="kontakt" class="py-sekcija podnozje" aria-label="Kontaktirajte nas">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 mx-auto text-center">
+            <h2 class="section-heading" title="Kontaktirajte nas" aria-level="2">Vama na usluzi</h2>
+            <hr class="my-4">
+            <p class="section-subheading text-bijelo mb-3">Slobodno mi se javite, bit će mi drago ako Vam mogu pomoći!<br>Ispunite kontakt obrazac niže ili zatražite telefonski poziv, a ja ću Vam odgovoriti na sva Vaša pitanja u najkraćem mogućem roku.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 ml-auto text-center text-bijelo mb-0">
+            <span class="fa-stack fa-3x">
+                <em class="fa fa-circle fa-stack-2x text-primary sr-icons" aria-hidden="true"></em>
+                <em class="fa fa-phone fa-stack-1x fa-inverse mb-3 sr-icons text-bijelo" aria-hidden="true" title="Nazovite me"></em>
+              </span>
+            <p>+385 (0) 99 723 6059</p>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 mr-auto text-center text-bijelo">
+            <span class="fa-stack fa-3x">
+                <em class="fa fa-circle fa-stack-2x text-primary sr-icons" aria-hidden="true"></em>
+                <em class="fa fa-envelope fa-stack-1x fa-inverse mb-3 sr-icons text-bijelo" aria-hidden="true" title="Pošaljite mi poruku"></em>
+              </span>
+            <p>
+              <a class="kontaktmail" href="mailto:zacestar@unin.hr" title="Pošalji poruku">zacestar@unin.hr</a>
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <form role="form" aria-label="Obrazac za kontakt" name="sentMessage" id="contactForm" novalidate>
+              <div class="row my-5">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="imeprezime">Ime i prezime <span class="crveno">*</span> : <small class="crveno">(obavezno)</small></label>
+                    <input class="form-control" id="imeprezime" name="imeprezime" type="text" minlength="3" pattern="\S+" placeholder="Vaše ime i prezime *" aria-required="true" data-required="true" accesskey="1" required data-validation-required-message="Molimo unesite Vaše ime i prezime.">
+                    <p class="help-block text-danger"></p>
+                  </div>
+                  <div class="form-group">
+                    <label for="elektronicka_adresa">Elektronička adresa <span class="crveno">*</span> : <small class="crveno">(obavezno)</small></label>
+                    <input class="form-control" id="elektronicka_adresa" name="elektronicka_adresa" type="email" placeholder="Vaša elektronička adresa *" aria-required="true" data-required="true" accesskey="2" required data-validation-required-message="Molimo unesite Vašu elektroničku adresu.">
+                    <p class="help-block text-danger"></p>
+                  </div>
+                  <div class="form-group">
+                    <label for="telefon">Telefon: <span class="crveno">*</span> : <small class="crveno">(obavezno)</small></label>
+                    <input class="form-control" id="telefon" name="telefon" type="tel" pattern="\d*" minlength="9" pattern="[-+]?[0-9]" placeholder="Vaš kontakt telefon *" aria-required="true" data-required="true" accesskey="3" required data-validation-required-message="Molimo unesite Vaš kontakt telefon.">
+                    <p class="help-block text-danger"></p>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="vasa_poruka">Poruka <span class="crveno">*</span> : <small class="crveno">(obavezno)</small></label>
+                    <textarea class="form-control" id="vasa_poruka" name="vasa_poruka" pattern="\S+" minlength="3" placeholder="Sadržaj Vaše poruke *" aria-required="true" data-required="true" accesskey="4" required data-validation-required-message="Molimo unesite Vašu poruku."></textarea>
+                    <p class="help-block text-danger"></p>
+                  </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="col-lg-12 text-center">
+                  <br>
+                  <button aria-label="Gumb za slanje poruke" id="posalji" class="btn btn-primary btn-xl text-uppercase" type="submit" name="posalji" accesskey="5">Pošalji poruku <em class="fa fa-send" aria-hidden="true" title="Pošalji poruku"></em></button>
+                  <br><br>
+                  <div id="success"></div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12 text-center text-muted mb-4"><small>Prikupljeni podaci putem ovog kontakt obrasca biti će isključivo korišteni za potrebu slanja ponude i odgovora na Vaš upit.</small></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Podnožje -->
+    <footer class="footer" aria-label="Podnožje stranice" role="contentinfo">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <p class="copyright text-center text-lg-left">Copyright &copy; 2018. <a href="https://www.facebook.com/profile.php?id=100004462424030" target="_blank" title="Žaklina Cestar - Facebook">Žaklina Cestar</a> <strong style="color:#ff4422;">♥</strong> Varaždin. Sva prava pridržana.</p>
+          </div>
+          <div class="col-md-4">
+            <ul class="list-inline social-buttons">
+              <li class="list-inline-item">
+                <a href="https://www.facebook.com/profile.php?id=100004462424030" class="fb" title="Pratite me na Facebooku!" target="_blank">
+                  <em class="fa fa-facebook" aria-hidden="true"></em>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://www.youtube.com/" class="yt" title="Gledajte me na YouTubeu!" target="_blank">
+                  <em class="fa fa-youtube" aria-hidden="true"></em>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://www.instagram.com/" class="ig" title="Pratite me na Instagramu!" target="_blank">
+                  <em class="fa fa-instagram" aria-hidden="true"></em>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://www.twitter.com/" class="tw" title="Pratite me na Twitteru!" target="_blank">
+                  <em class="fa fa-twitter" aria-hidden="true"></em>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="mailto:zacestar@unin.hr?subject=Upit" class="posta" title="Pošaljite mi poruku" target="_blank">
+                  <em class="fa fa-envelope" aria-hidden="true"></em>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <a class="w-toplink" href="#vrh" title="Povratak na vrh stranice"></a>
+
+  <!-- JavaScript -->
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+
+  <script type="text/javascript" src="js/jquery.easing.min.js"></script>
+  <script type="text/javascript" src="js/scrollreveal.min.js"></script>
+
+  <script type="text/javascript" src="js/jqBootstrapValidation.js"></script>
+  <script type="text/javascript" src="js/kontakt.js"></script>
+
+  <script type="text/javascript" src="js/lightbox.js"></script>
+  <script type="text/javascript" src="js/zaklina.js"></script>
+
+</body>
+</html>
